@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+<form style="background-color: #fff; padding: 40px; border-radius: 8px; max-width: 600px; width: 100%;">
+    <h2 style="text-align: center; color: #333; margin-bottom: 20px;"><ins>ORDER FORM</ins></h2>
+
+    <label for="name" style="display: block; font-weight: bold; color: #555; margin-bottom: 8px;">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Yuvarakj required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+    <label for="email" style="display: block; font-weight: bold; color: #555; margin-bottom: 8px;">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="yuvaraj@example.com" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+    <label for="phone" style="display: block; font-weight: bold; color: #555; margin-bottom: 8px;">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+    <label for="product" style="display: block; font-weight: bold; color: #555; margin-bottom: 8px;">Product:</label>
+    <select id="product" name="product" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        <option value="product1">Product 1 - $10.00</option>
+        <option value="product2">Product 2 - $20.00</option>
+        <option value="product3">Product 3 - $30.00</option>
+        <option value="product4">Product 4 - $40.00</option>
+    </select>
+
+    <label for="quantity" style="display: block; font-weight: bold; color: #555; margin-bottom: 8px;">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" placeholder="1" min="1" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+    <label for="address" style="display: block; font-weight: bold; color: #555; margin-bottom: 8px;">Shipping Address:</label>
+    <textarea id="address" name="address" placeholder="123 Main St, Apt 4B, City, State, ZIP" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; height: 100px; resize: vertical;"></textarea>
+
+    <label for="payment" style="display: block; font-weight: bold; color: #555; margin-bottom: 8px;">Payment Method:</label>
+    <div style="margin-bottom: 15px;">
+        <input type="radio" id="credit-card" name="payment" value="credit-card" required>
+        <label for="credit-card" style="font-weight: normal; margin-right: 15px; color: #333;">Credit Card</label>
+        
+        <input type="radio" id="paypal" name="payment" value="paypal" required>
+        <label for="paypal" style="font-weight: normal; margin-right: 15px; color: #333;">PayPal</label>
+        
+        <input type="radio" id="bank-transfer" name="payment" value="bank-transfer" required>
+        <label for="bank-transfer" style="font-weight: normal; color: #333;">Bank Transfer</label>
+    </div>
+
+    <input type="submit" value="Place Order" style="background-color: #007bff; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px;">
+
+</form>
+
+</body>
+</html>

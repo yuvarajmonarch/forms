@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        input[type="text"], input[type="email"], textarea, select, input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="number"] {
+            margin-bottom: 25px; 
+        }
+        textarea {
+            resize: vertical;
+        }
+        .radio-group, .checkbox-group {
+            margin-bottom: 15px;
+        }
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+            margin-right: 10px;
+            color: #333;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <h2><ins>SURVEY FORM</ins></h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Yuvaraj" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="yuvaraj@example.com" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="Your Age" required>
+
+    <label for="gender">Gender:</label>
+    <div class="radio-group">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+    </div>
+
+    <label for="satisfaction">How satisfied are you with our service?</label>
+    <select id="satisfaction" name="satisfaction" required>
+        <option value="very-satisfied">Very Satisfied</option>
+        <option value="satisfied">Satisfied</option>
+        <option value="neutral">Neutral</option>
+        <option value="dissatisfied">Dissatisfied</option>
+        <option value="very-dissatisfied">Very Dissatisfied</option>
+    </select>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Comments on here" required></textarea>
+
+    <input type="submit" value="Submit Survey">
+</form>
+
+</body>
+</html>

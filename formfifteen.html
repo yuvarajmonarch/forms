@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Submission Form</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form 
+        {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h2 
+        {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label 
+        {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        input, select, textarea 
+        {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea 
+        {
+            height: 100px;
+            resize: vertical;
+        }
+        input[type="file"] 
+        {
+            border: none;
+            padding: 0;
+        }
+        input[type="submit"] 
+        {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+        }
+        input[type="submit"]:hover 
+        {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>PROJECT SUBMISSION FORM</h2>
+
+        <label for="project-title">Project Title:</label>
+        <input type="text" id="project-title" name="project-title" placeholder="Enter project title" required>
+
+        <label for="project-author">Project Author:</label>
+        <input type="text" id="project-author" name="project-author" placeholder="Enter project author's name" required>
+
+        <label for="project-email">Contact Email:</label>
+        <input type="email" id="project-email" name="project-email" placeholder="contact@mail.com" required>
+
+        <label for="project-file">Upload Project File:</label>
+        <input type="file" id="project-file" name="project-file" required>
+
+        <label for="project-description">Project Description:</label>
+        <textarea id="project-description" name="project-description" placeholder="Provide a brief description of the project" required></textarea>
+
+        <input type="submit" value="Submit Project">
+    </form>
+</body>
+</html>

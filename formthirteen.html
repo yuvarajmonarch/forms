@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2><ins>PET ADOPTION FORM</ins></h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Yuvaraj" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="yuvaraj@mail.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="123 Main St, Apt 4B, City, State, ZIP" required></textarea>
+
+        <label for="pet-type">Type of Pet:</label>
+        <select id="pet-type" name="pet-type" required>
+            <option value="">Select Pet Type</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="bird">Bird</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="pet-name">Pet's Name (if applicable):</label>
+        <input type="text" id="pet-name" name="pet-name" placeholder="Pet's Name">
+
+        <label for="experience">Previous Pet Ownership Experience:</label>
+        <textarea id="experience" name="experience" placeholder="Describe your previous experience with pets."></textarea>
+
+        <label for="reason">Reason for Adoption:</label>
+        <textarea id="reason" name="reason" placeholder="Why are you interested in adopting a pet?"></textarea>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

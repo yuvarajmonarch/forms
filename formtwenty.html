@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planning Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>EVENT PLANNING FORMS</h2>
+
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="event-name" placeholder="e.g., Annual Conference" required>
+
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required>
+
+        <label for="event-time">Event Time:</label>
+        <input type="time" id="event-time" name="event-time" required>
+
+        <label for="event-venue">Event Venue:</label>
+        <input type="text" id="event-venue" name="event-venue" placeholder="e.g., Grand Ballroom" required>
+
+        <label for="contact-name">Contact Name:</label>
+        <input type="text" id="contact-name" name="contact-name" placeholder="Organizer's Name" required>
+
+        <label for="contact-email">Contact Email:</label>
+        <input type="email" id="contact-email" name="contact-email" placeholder="organizer@example.com" required>
+
+        <label for="contact-phone">Contact Phone:</label>
+        <input type="tel" id="contact-phone" name="contact-phone" placeholder="(123) 456-7890" required>
+
+        <label for="event-details">Event Details:</label>
+        <textarea id="event-details" name="event-details" placeholder="Describe the event, including any special requirements..." required></textarea>
+
+        <label for="attendees">Estimated Number of Attendees:</label>
+        <input type="number" id="attendees" name="attendees" placeholder="Expected number of attendees" required>
+
+        <label for="catering">Catering Required:</label>
+        <select id="catering" name="catering" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <input type="submit" value="Submit Event Plan">
+    </form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Return Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>PRODUCT RETURN FORM</h2>
+
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" name="customer-name" placeholder="Yuvaraj" required>
+
+        <label for="order-number">Order Number:</label>
+        <input type="text" id="order-number" name="order-number" placeholder="123456789" required>
+
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" name="product-name" placeholder="Product Name" required>
+
+        <label for="return-reason">Reason for Return:</label>
+        <textarea id="return-reason" name="return-reason" placeholder="Please explain the reason for return" required></textarea>
+
+        <label for="return-method">Preferred Return Method:</label>
+        <select id="return-method" name="return-method" required>
+            <option value="refund">Refund</option>
+            <option value="exchange">Exchange</option>
+            <option value="store-credit">Store Credit</option>
+        </select>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Any additional information"></textarea>
+
+        <input type="submit" value="Submit Return Request">
+    </form>
+</body>
+</html>

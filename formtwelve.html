@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Entry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2><ins>CONTEST ENTRY FORM</ins></h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Yuvaraj" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="yuvaraj@example.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+
+        <label for="contest">Select Contest:</label>
+        <select id="contest" name="contest" required>
+            <option value="photo-contest">Photo Contest</option>
+            <option value="essay-contest">Essay Contest</option>
+            <option value="video-contest">Video Contest</option>
+            <option value="design-contest">Design Contest</option>
+        </select>
+
+        <label for="entry">Submit Your Entry:</label>
+        <input type="file" id="entry" name="entry" required>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Any additional information or comments?"></textarea>
+
+        <input type="submit" value="Submit Entry">
+    </form>
+</body>
+</html>

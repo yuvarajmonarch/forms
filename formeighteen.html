@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Log Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="time"], input[type="date"] {
+            padding: 8px;
+        }
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Visitor Log Form</h2>
+
+        <label for="visitor-name">Visitor's Name:</label>
+        <input type="text" id="visitor-name" name="visitor-name" placeholder="Pradeep" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time-in">Time In:</label>
+        <input type="time" id="time-in" name="time-in" required>
+
+        <label for="time-out">Time Out:</label>
+        <input type="time" id="time-out" name="time-out">
+
+        <label for="purpose">Purpose of Visit:</label>
+        <textarea id="purpose" name="purpose" placeholder="Enter purpose of visit" required></textarea>
+
+        <label for="contact-person">Person to Meet:</label>
+        <input type="text" id="contact-person" name="contact-person" placeholder="Yuvaraj" required>
+
+        <input type="submit" value="Log Visit">
+    </form>
+</body>
+</html>
